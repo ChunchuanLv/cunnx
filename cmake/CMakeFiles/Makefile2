@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chunchuan/thesis/cunnx
+CMAKE_SOURCE_DIR = /home/chunchuan/cunnx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chunchuan/thesis/cunnx/cmake
+CMAKE_BINARY_DIR = /home/chunchuan/cunnx/cmake
 
 #=============================================================================
 # Target rules for target CMakeFiles/cunnx.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/chunchuan/thesis/cunnx/cmake
 CMakeFiles/cunnx.dir/all:
 	$(MAKE) -f CMakeFiles/cunnx.dir/build.make CMakeFiles/cunnx.dir/depend
 	$(MAKE) -f CMakeFiles/cunnx.dir/build.make CMakeFiles/cunnx.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/chunchuan/thesis/cunnx/cmake/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/chunchuan/cunnx/cmake/CMakeFiles  1
 	@echo "Built target cunnx"
 .PHONY : CMakeFiles/cunnx.dir/all
 
@@ -69,14 +69,23 @@ all: CMakeFiles/cunnx.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cunnx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chunchuan/thesis/cunnx/cmake/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chunchuan/cunnx/cmake/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cunnx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chunchuan/thesis/cunnx/cmake/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chunchuan/cunnx/cmake/CMakeFiles 0
 .PHONY : CMakeFiles/cunnx.dir/rule
 
 # Convenience name for target.
 cunnx: CMakeFiles/cunnx.dir/rule
 .PHONY : cunnx
+
+# Pre-install relink rule for target.
+CMakeFiles/cunnx.dir/preinstall:
+	$(MAKE) -f CMakeFiles/cunnx.dir/build.make CMakeFiles/cunnx.dir/preinstall
+.PHONY : CMakeFiles/cunnx.dir/preinstall
+
+# Prepare target for install.
+preinstall: CMakeFiles/cunnx.dir/preinstall
+.PHONY : preinstall
 
 # clean rule for target.
 CMakeFiles/cunnx.dir/clean:

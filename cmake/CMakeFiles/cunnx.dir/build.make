@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chunchuan/thesis/cunnx
+CMAKE_SOURCE_DIR = /home/chunchuan/cunnx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chunchuan/thesis/cunnx/cmake
+CMAKE_BINARY_DIR = /home/chunchuan/cunnx/cmake
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cunnx.dir/depend.make
@@ -653,17 +653,17 @@ CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o: /usr/local/cuda/include/vector
 CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o: /usr/local/cuda/include/vector_types.h
 CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o: CMakeFiles/cunnx.dir/cunnx_generated_init.cu.o.cmake
 CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o: ../init.cu
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/chunchuan/thesis/cunnx/cmake/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/chunchuan/cunnx/cmake/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building NVCC (Device) object CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o"
-	cd /home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir && /usr/bin/cmake -E make_directory /home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//.
-	cd /home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o -D generated_cubin_file:STRING=/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o.cubin.txt -P /home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.cmake
+	cd /home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir && /usr/bin/cmake -E make_directory /home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//.
+	cd /home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o -D generated_cubin_file:STRING=/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o.cubin.txt -P /home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.cmake
 
 # Object files for target cunnx
 cunnx_OBJECTS =
 
 # External object files for target cunnx
 cunnx_EXTERNAL_OBJECTS = \
-"/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o"
+"/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o"
 
 libcunnx.so: CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o
 libcunnx.so: CMakeFiles/cunnx.dir/build.make
@@ -679,6 +679,27 @@ libcunnx.so: CMakeFiles/cunnx.dir/link.txt
 CMakeFiles/cunnx.dir/build: libcunnx.so
 .PHONY : CMakeFiles/cunnx.dir/build
 
+# Object files for target cunnx
+cunnx_OBJECTS =
+
+# External object files for target cunnx
+cunnx_EXTERNAL_OBJECTS = \
+"/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o"
+
+CMakeFiles/CMakeRelink.dir/libcunnx.so: CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o
+CMakeFiles/CMakeRelink.dir/libcunnx.so: CMakeFiles/cunnx.dir/build.make
+CMakeFiles/CMakeRelink.dir/libcunnx.so: /usr/local/cuda/lib64/libcudart.so
+CMakeFiles/CMakeRelink.dir/libcunnx.so: /usr/local/cuda/lib64/libcublas.so
+CMakeFiles/CMakeRelink.dir/libcunnx.so: /home/chunchuan/torch/install/lib/libTH.so
+CMakeFiles/CMakeRelink.dir/libcunnx.so: /usr/lib/libopenblas.so
+CMakeFiles/CMakeRelink.dir/libcunnx.so: CMakeFiles/cunnx.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module CMakeFiles/CMakeRelink.dir/libcunnx.so"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cunnx.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+CMakeFiles/cunnx.dir/preinstall: CMakeFiles/CMakeRelink.dir/libcunnx.so
+.PHONY : CMakeFiles/cunnx.dir/preinstall
+
 CMakeFiles/cunnx.dir/requires:
 .PHONY : CMakeFiles/cunnx.dir/requires
 
@@ -687,6 +708,6 @@ CMakeFiles/cunnx.dir/clean:
 .PHONY : CMakeFiles/cunnx.dir/clean
 
 CMakeFiles/cunnx.dir/depend: CMakeFiles/cunnx.dir/./cunnx_generated_init.cu.o
-	cd /home/chunchuan/thesis/cunnx/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chunchuan/thesis/cunnx /home/chunchuan/thesis/cunnx /home/chunchuan/thesis/cunnx/cmake /home/chunchuan/thesis/cunnx/cmake /home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chunchuan/cunnx/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chunchuan/cunnx /home/chunchuan/cunnx /home/chunchuan/cunnx/cmake /home/chunchuan/cunnx/cmake /home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cunnx.dir/depend
 

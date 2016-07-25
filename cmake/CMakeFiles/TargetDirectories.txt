@@ -1,1 +1,1 @@
-/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir
+/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir

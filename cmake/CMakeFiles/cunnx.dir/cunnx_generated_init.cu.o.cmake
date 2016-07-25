@@ -56,18 +56,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/bin/cmake") # path
-set(source_file "/home/chunchuan/thesis/cunnx/init.cu") # path
-set(NVCC_generated_dependency_file "/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.depend") # path
+set(source_file "/home/chunchuan/cunnx/init.cu") # path
+set(NVCC_generated_dependency_file "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//cunnx_generated_init.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/share/cmake-3.0/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/share/cmake-3.0/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # bool
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//.") # path
-set(generated_file_internal "/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o") # path
-set(generated_cubin_file_internal "/home/chunchuan/thesis/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o.cubin.txt") # path
+set(generated_file_path "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//.") # path
+set(generated_file_internal "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o") # path
+set(generated_cubin_file_internal "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS -gencode;arch=compute_30,code=sm_30 ;; ) # list
