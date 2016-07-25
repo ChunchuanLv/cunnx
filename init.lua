@@ -17,5 +17,6 @@ require('cunnx.Sort')
 require('cunnx.LazyKBest')
 require('cunnx.NoisyReLU')
 require('cunnx.TypeDecorator')
+require('cunnx.CudaQuickProduct')
 
 require('cunnx.test')
