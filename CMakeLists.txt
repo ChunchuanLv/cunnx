@@ -33,7 +33,8 @@ ELSE()
   INCLUDE(${CMAKE_CURRENT_SOURCE_DIR}/cmake/FindCudaArch.cmake)
   SELECT_NVCC_ARCH_FLAGS(NVCC_FLAGS_EXTRA)
 ENDIF()
-LIST(APPEND CUDA_NVCC_FLAGS ${NVCC_FLAGS_EXTRA})
+LIST(APPEND CUDA_NVCC_FLAGS ${NVCC_FLAGS_EXTRA})                                                                                                                              
+set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-arch=sm_35 -rdc=true -lcudadevrt -lcublas_device)
 
 
 INCLUDE_DIRECTORIES("${Torch_INSTALL_INCLUDE}/THC")

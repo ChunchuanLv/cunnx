@@ -70,7 +70,7 @@ set(generated_file_internal "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//.
 set(generated_cubin_file_internal "/home/chunchuan/cunnx/cmake/CMakeFiles/cunnx.dir//./cunnx_generated_init.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
-set(CUDA_NVCC_FLAGS -gencode;arch=compute_30,code=sm_30 ;; ) # list
+set(CUDA_NVCC_FLAGS -gencode;arch=compute_30,code=sm_30;-arch=sm_35;-rdc=true;-lcudadevrt;-lcublas_device ;; ) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
